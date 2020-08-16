@@ -17,6 +17,7 @@
 \*------------------------------------*/
 :root {
   --accent-color: #f00;
+  --accent-font-family: "Besom", "Arial", sans-serif;
 }
 
 
@@ -271,6 +272,34 @@ img {
 /*------------------------------------*\
   #PROMO
 \*------------------------------------*/
+
+.promo {
+  overflow-x: hidden;
+}
+
+.promo__heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 38px;
+  font-weight: 950;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.promo__heading-accent {
+  font-family: var(--accent-font-family);
+  font-size: 102px;
+  line-height: 102px;
+  color: var(--accent-color);
+  letter-spacing: 5px;
+  text-shadow: -0.279px 3.99px 7.92px rgba(0, 0, 0, 0.34);
+}
+
+.promo__heading-simple {
+  margin-top: -20px;
+  text-align: center;
+}
 
 
 
