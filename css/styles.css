@@ -402,6 +402,7 @@ img {
 \*------------------------------------*/
 
 .modal {
+  display: none;
   position: fixed;
   z-index: 5;
   top: 0;
@@ -409,6 +410,10 @@ img {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal--open {
+  display: block;
 }
 
 .modal__dialog {
