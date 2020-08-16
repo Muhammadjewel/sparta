@@ -340,6 +340,7 @@ img {
   line-height: 102px;
   color: var(--accent-color);
   letter-spacing: 5px;
+  text-align: center;
   text-shadow: -0.279px 3.99px 7.92px rgba(0, 0, 0, 0.34);
 }
 
@@ -350,8 +351,13 @@ img {
 
 .promo__date-wrapper {
   display: flex;
+  justify-content: center;
   align-items: flex-start;
   margin-bottom: 50px;
+}
+
+.promo__date {
+  text-align: center;
 }
 
 .promo__date-list {
@@ -382,6 +388,7 @@ img {
   font-weight: 300;
   font-style: italic;
   color: #fff;
+  text-align: left;
 }
 
 
@@ -446,6 +453,28 @@ img {
     width: 160px;
   }
 
+
+
+  /* PROMO */
+
+  .promo {
+    padding-top: 47px;
+    padding-bottom: 158px;
+  }
+
+  .promo__heading {
+    margin-bottom: 28px;
+    font-size: 42px;
+  }
+
+  .promo__heading-simple {
+    margin-top: -23px;
+  }
+
+  .promo__date-wrapper {
+    margin-bottom: 46px;
+  }
+
 }
 
 
@@ -497,6 +526,39 @@ img {
   .logo__img {
     width: 247px;
     height: 89px;
+  }
+
+
+
+  /* PROMO */
+  
+  .promo {
+    padding-top: 137px;
+  }
+
+  .promo__heading-accent {
+    font-size: 172px;
+    line-height: 155px;
+    text-align: left;
+  }
+
+  .promo__heading-simple {
+    margin-top: -33px;
+    font-size: 77px;
+    text-align: left;
+  }
+
+  .promo__date {
+    text-align: left;
+  }
+
+  .promo__date-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 64px;
+  }
+
+  .promo__date-list {
+    margin-right: 42px;
   }
 
 }
