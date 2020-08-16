@@ -210,7 +210,7 @@ img {
 \*------------------------------------*/
 
 .site-header-promo-wrapper {
-  padding-bottom: 125px;
+  padding-bottom: 142px;
   background-image: url("../img/site-header-promo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -492,6 +492,7 @@ img {
   /* SITE-HEADER-PROMO-WRAPPER */
 
   .site-header-promo-wrapper {
+    background-size: cover;
     background-image: url("../img/site-header-promo-desktop.jpg");
   }
   
