@@ -4,7 +4,9 @@
 /* BOX-SIZING */
 /* GLOBAL STYLES */
 /* HELPER / GLOBAL COMPONENTS */
+/* SITE-HEADER-PROMO-WRAPPER */
 /* SITE-HEADER */
+/* PROMO */
 /* LOGO */
 /* MEDIA QUERIES */
 
@@ -158,12 +160,34 @@ img {
 
 
 /*------------------------------------*\
+  #SITE-HEADER-PROMO-WRAPPER
+\*------------------------------------*/
+.site-header-promo-wrapper {
+  background-image: url("../img/site-header-promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* Retina background-image for site-header-promo wrapper */
+@media (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    
+  .site-header-promo-wrapper {
+    background-image: url("../img/site-header-promo-mobile@2x.jpg");
+  }
+
+}
+
+
+
+/*------------------------------------*\
   #SITE-HEADER
 \*------------------------------------*/
 
 .site-header {
   padding-top: 11px;
-  background-color: #222;
   color: #fff;
 }
 
@@ -245,6 +269,12 @@ img {
 
 
 /*------------------------------------*\
+  #PROMO
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
   #MEDIA-QUERIES
 \*------------------------------------*/
 
@@ -278,6 +308,26 @@ img {
 
 
 
+  /* SITE-HEADER-PROMO-WRAPPER */
+
+  .site-header-promo-wrapper {
+    background-image: url("../img/site-header-promo-tablet.jpg");
+  }
+  
+
+  /* Retina background-image for site-header-promo wrapper */
+
+  @media (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+      
+    .site-header-promo-wrapper {
+      background-image: url("../img/site-header-promo-tablet@2x.jpg");
+    }
+  
+  }
+
+
+
   /* LOGO */
 
   .logo__img {
@@ -294,6 +344,26 @@ img {
   .container {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+
+
+  /* SITE-HEADER-PROMO-WRAPPER */
+
+  .site-header-promo-wrapper {
+    background-image: url("../img/site-header-promo-desktop.jpg");
+  }
+  
+
+  /* Retina background-image for site-header-promo wrapper */
+
+  @media (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+      
+    .site-header-promo-wrapper {
+      background-image: url("../img/site-header-promo-desktop@2x.jpg");
+    }
+  
   }
 
 
