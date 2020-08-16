@@ -267,10 +267,52 @@ img {
 
 @media only screen and (min-width: 750px) {
 
+  /* CONTAINER */
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+
+
   /* LOGO */
 
   .logo__img {
     width: 160px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1148px) {
+
+  /* CONTAINER */
+
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+
+  /* SITE-HEADER */
+  
+  .site-header {
+    padding-top: 22px;
+  }
+
+  .site-header__tel {
+    font-size: 24px;
+  }
+
+
+
+  /* LOGO */
+
+  .logo__img {
+    width: 247px;
+    height: 89px;
   }
 
 }
