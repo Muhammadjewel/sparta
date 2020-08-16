@@ -99,6 +99,39 @@
   </div>
 
 
+  <!-- ============
+    PROMO
+  ================= -->
+  <section class="modal">
+    <div class="modal__dialog">
+
+      <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+
+      <h2 class="modal__heading">Попробуй выжить</h2>
+      <p class="modal__text">Оставь свой номер телефона, наши менеджеры свяжутся с тобой для подтверждения заявки</p>
+
+      <form class="modal__form registration-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="registration-form__group">
+          <label class="visually-hidden" for="name-input">Имя</label>
+          <input class="registration-form__input" type="text" name="name" id="name-input" placeholder="Имя" required>
+        </div>
+
+        <div class="registration-form__group">
+          <label class="visually-hidden" for="phone-input">Телефон</label>
+          <input class="registration-form__input" type="tel" name="phone" id="phone-input" placeholder="Телефон" required>
+        </div>
+
+        <button class="cta-button" type="submit">
+          <span class="cta-button__text">Отправить</span>
+        </button> 
+      </form>
+
+    </div>
+  </section>
+
+
   <script src="js/main.js"></script>
 </body>
 </html>
