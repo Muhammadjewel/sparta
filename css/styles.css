@@ -158,17 +158,63 @@ img {
   margin-right: auto;
 }
 
+/* CTA-BUTTON */
+
+.cta-button {
+  display: inline-flex;
+  justify-content: center;
+  width: 307px;
+  max-width: 100%;
+  height: 73px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  background-image: url("../img/cta-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.cta-button:hover {
+  background-image: url("../img/cta-bg-hover.png");
+}
+
+.cta-button:active .cta-button__text {
+  transform: translateY(2px);
+}
+
+
+/* Retina background-image for site-header-promo wrapper */
+@media (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+
+    .cta-button {
+      background-image: url("../img/cta-bg@2x.png");
+    }
+
+    .cta-button:hover {
+      background-image: url("../img/cta-bg-hover@2x.png");
+    }
+
+}
+
 
 
 /*------------------------------------*\
   #SITE-HEADER-PROMO-WRAPPER
 \*------------------------------------*/
+
 .site-header-promo-wrapper {
+  padding-bottom: 125px;
   background-image: url("../img/site-header-promo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center top;
-  background-attachment: fixed;
 }
 
 /* Retina background-image for site-header-promo wrapper */
@@ -280,9 +326,10 @@ img {
 .promo__heading {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 38px;
-  font-weight: 950;
+  font-weight: 900;
   letter-spacing: 5px;
   color: #fff;
 }
@@ -299,6 +346,42 @@ img {
 .promo__heading-simple {
   margin-top: -20px;
   text-align: center;
+}
+
+.promo__date-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.promo__date-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-right: 13px;
+  list-style-type: none;
+  background-image: url("../img/promo-date-list-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.promo__date-list-item {
+  padding: 12px;
+}
+
+.promo__date-text {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
 }
 
 
