@@ -11,92 +11,88 @@
 
   <h1 class="visually-hidden">Спарта - курс по выживанию</h1>
 
+  <!-- ============
+    SITE-HEADER
+  ================= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__container">
+
+        <a class="logo" href="index.html">
+          <picture>
+            <!-- Desktop webp + png -->
+            <source srcset="img/sparta-logo-desktop.webp 1x,
+                            img/sparta-logo-desktop@2x.webp 2x"
+                    media="(min-width:1148px)"
+                    type="image/webp">
+            <source srcset="img/sparta-logo-desktop.png 1x,
+                            img/sparta-logo-desktop@2x.png 2x"
+                    media="(min-width:1148px)">
+            <!-- Tablet webp + png -->
+            <source srcset="img/sparta-logo-tablet.webp 1x, 
+                            img/sparta-logo-tablet@2x.webp 2x" 
+                    media="(min-width:750px)"
+                    type="image/webp">
+            <source srcset="img/sparta-logo-tablet.png 1x, 
+                            img/sparta-logo-tablet@2x.png 2x" 
+                    media="(min-width:750px)">
+            <!-- Small webp -->
+            <source srcset="img/sparta-logo.webp 1x,
+                            img/sparta-logo@2x.webp 2x"
+                    type="image/webp">
+            <img class="logo__img" src="img/sparta-logo.png" alt="Лого Спарта" width="58" height="58" srcset="img/sparta-logo.png 1x, img/sparta-logo@2x.png 2x">
+          </picture>
+        </a>
+
+        <p class="site-header__text">спецкурс</p>
+
+        <a class="site-header__tel" href="tel:+79304150252">+7 (930) 415 02 52</a>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============
+    PROMO
+  ================= -->
+  <section class="promo">
+    <div class="container">
+
+      <h2 class="promo__heading">
+        <span class="promo__heading-accent">Выжить</span>
+        <span class="promo__heading-simple">любой ценой</span>
+      </h2>
+
+      <section class="promo__date">
+        <h3 class="visually-hidden">Когда будет тренинг</h3>
+
+        <div class="promo__date-wrapper">
+          <ol class="promo__date-list">
+            <li class="promo__date-list-item">
+              <span class="visually-hidden">Пятница</span>
+              <span aria-hidden="true">Пт</span>
+            </li>
+            <li class="promo__date-list-item">
+              <span class="visually-hidden">Суббота</span>
+              <span aria-hidden="true">Сб</span>
+            </li>
+            <li class="promo__date-list-item">
+              <span class="visually-hidden">Воскресенье</span>
+              <span aria-hidden="true">Вс</span>
+            </li>
+          </ol>
   
-  <div class="site-header-promo-wrapper">
-    <!-- ============
-      SITE-HEADER
-    ================= -->
-    <header class="site-header">
-      <div class="container">
-        <div class="site-header__container">
-  
-          <a class="logo" href="index.html">
-            <picture>
-              <!-- Desktop webp + png -->
-              <source srcset="img/sparta-logo-desktop.webp 1x,
-                              img/sparta-logo-desktop@2x.webp 2x"
-                      media="(min-width:1148px)"
-                      type="image/webp">
-              <source srcset="img/sparta-logo-desktop.png 1x,
-                              img/sparta-logo-desktop@2x.png 2x"
-                      media="(min-width:1148px)">
-              <!-- Tablet webp + png -->
-              <source srcset="img/sparta-logo-tablet.webp 1x, 
-                              img/sparta-logo-tablet@2x.webp 2x" 
-                      media="(min-width:750px)"
-                      type="image/webp">
-              <source srcset="img/sparta-logo-tablet.png 1x, 
-                              img/sparta-logo-tablet@2x.png 2x" 
-                      media="(min-width:750px)">
-              <!-- Small webp -->
-              <source srcset="img/sparta-logo.webp 1x,
-                              img/sparta-logo@2x.webp 2x"
-                      type="image/webp">
-              <img class="logo__img" src="img/sparta-logo.png" alt="Лого Спарта" width="58" height="58" srcset="img/sparta-logo.png 1x, img/sparta-logo@2x.png 2x">
-            </picture>
-          </a>
-  
-          <p class="site-header__text">спецкурс</p>
-  
-          <a class="site-header__tel" href="tel:+79304150252">+7 (930) 415 02 52</a>
-  
+          <p class="promo__date-text">3 дня с утра<br>до вечера</p>
         </div>
-      </div>
-    </header>
-  
-  
-    <!-- ============
-      PROMO
-    ================= -->
-    <section class="promo">
-      <div class="container">
-  
-        <h2 class="promo__heading">
-          <span class="promo__heading-accent">Выжить</span>
-          <span class="promo__heading-simple">любой ценой</span>
-        </h2>
-  
-        <section class="promo__date">
-          <h3 class="visually-hidden">Когда будет тренинг</h3>
-  
-          <div class="promo__date-wrapper">
-            <ol class="promo__date-list">
-              <li class="promo__date-list-item">
-                <span class="visually-hidden">Пятница</span>
-                <span aria-hidden="true">Пт</span>
-              </li>
-              <li class="promo__date-list-item">
-                <span class="visually-hidden">Суббота</span>
-                <span aria-hidden="true">Сб</span>
-              </li>
-              <li class="promo__date-list-item">
-                <span class="visually-hidden">Воскресенье</span>
-                <span aria-hidden="true">Вс</span>
-              </li>
-            </ol>
-    
-            <p class="promo__date-text">3 дня с утра<br>до вечера</p>
-          </div>
-  
-          <a class="cta-button" href="#">
-            <span class="cta-button__text">Рискнуть</span>
-          </a>
-        </section>
-  
-      </div>
-    </section>
-    
-  </div>
+
+        <a class="cta-button" href="#">
+          <span class="cta-button__text">Рискнуть</span>
+        </a>
+      </section>
+
+    </div>
+  </section>
 
 
   <!-- ============

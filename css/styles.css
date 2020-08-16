@@ -4,7 +4,6 @@
 /* BOX-SIZING */
 /* GLOBAL STYLES */
 /* HELPER / GLOBAL COMPONENTS */
-/* SITE-HEADER-PROMO-WRAPPER */
 /* SITE-HEADER */
 /* LOGO */
 /* PROMO */
@@ -124,6 +123,20 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #4c4c4c;
+  background-image: url("../img/site-header-promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+}
+
+/* Retina background-image for body */
+@media (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    
+  body {
+    background-image: url("../img/site-header-promo-mobile@2x.jpg");
+  }
+
 }
 
 img {
@@ -197,38 +210,13 @@ img {
 @media (-webkit-min-device-pixel-ratio: 2), 
   (min-resolution: 192dpi) { 
 
-    .cta-button {
-      background-image: url("../img/cta-bg@2x.png");
-    }
-
-    .cta-button:hover {
-      background-image: url("../img/cta-bg-hover@2x.png");
-    }
-
-}
-
-
-
-/*------------------------------------*\
-  #SITE-HEADER-PROMO-WRAPPER
-\*------------------------------------*/
-
-.site-header-promo-wrapper {
-  padding-bottom: 142px;
-  background-image: url("../img/site-header-promo-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center top;
-}
-
-/* Retina background-image for site-header-promo wrapper */
-@media (-webkit-min-device-pixel-ratio: 2), 
-  (min-resolution: 192dpi) { 
-    
-  .site-header-promo-wrapper {
-    background-image: url("../img/site-header-promo-mobile@2x.jpg");
+  .cta-button {
+    background-image: url("../img/cta-bg@2x.png");
   }
 
+  .cta-button:hover {
+    background-image: url("../img/cta-bg-hover@2x.png");
+  }
 }
 
 
@@ -325,6 +313,7 @@ img {
 
 .promo {
   overflow-x: hidden;
+  padding-bottom: 142px;
 }
 
 .promo__heading {
@@ -541,19 +530,11 @@ img {
 
 @media only screen and (min-width: 750px) {
 
-  /* CONTAINER */
+  /* BODY */
 
-  .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-
-
-  /* SITE-HEADER-PROMO-WRAPPER */
-
-  .site-header-promo-wrapper {
+  body {
     background-image: url("../img/site-header-promo-tablet.jpg");
+    background-position: center top;
   }
   
 
@@ -562,10 +543,19 @@ img {
   @media (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi) { 
       
-    .site-header-promo-wrapper {
+    body {
       background-image: url("../img/site-header-promo-tablet@2x.jpg");
     }
-  
+
+  }
+
+
+
+  /* CONTAINER */
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
 
@@ -603,18 +593,9 @@ img {
 
 @media only screen and (min-width: 1148px) {
 
-  /* CONTAINER */
+  /* BODY */
 
-  .container {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-
-
-  /* SITE-HEADER-PROMO-WRAPPER */
-
-  .site-header-promo-wrapper {
+  body {
     background-size: cover;
     background-image: url("../img/site-header-promo-desktop.jpg");
   }
@@ -625,10 +606,19 @@ img {
   @media (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi) { 
       
-    .site-header-promo-wrapper {
+    body {
       background-image: url("../img/site-header-promo-desktop@2x.jpg");
     }
   
+  }
+
+
+
+  /* CONTAINER */
+
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
 
