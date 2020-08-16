@@ -227,3 +227,14 @@ img {
   }
 
 }
+
+
+@media only screen and (min-width: 750px) {
+
+  /* LOGO */
+
+  .logo__img {
+    width: 160px;
+  }
+
+}
