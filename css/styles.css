@@ -186,6 +186,16 @@ img {
   content: "";
 }
 
+/* Retina background-image for site-header__text before */
+@media (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    
+  .site-header__text::before {
+    background-image: url("../img/special-course-blur@2x.png");
+  }
+
+}
+
 .site-header__tel {
   font-size: 18px;
   text-decoration: none;
