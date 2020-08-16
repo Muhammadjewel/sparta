@@ -1,4 +1,5 @@
 /* =============== CONTENTS =============== */
+/* CUSTOM PROPERTIES */
 /* FONTS */
 /* BOX-SIZING */
 /* GLOBAL STYLES */
@@ -6,6 +7,15 @@
 /* SITE-HEADER */
 /* LOGO */
 /* MEDIA QUERIES */
+
+
+
+/*------------------------------------*\
+  #CUSTOM-PROPERTIES
+\*------------------------------------*/
+:root {
+  --accent-color: #f00;
+}
 
 
 
@@ -203,11 +213,27 @@ img {
   font-weight: 500;
 }
 
+.site-header__tel:hover {
+  color: var(--accent-color);
+}
+
+.site-header__tel:active {
+  opacity: 0.4;
+}
+
 /*------------------------------------*\
   #LOGO
 \*------------------------------------*/
 .logo {
   display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+.logo:active {
+  opacity: 0.4;
 }
 
 .logo__img {
