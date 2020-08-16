@@ -18,6 +18,15 @@
 
         <a class="logo" href="index.html">
           <picture>
+            <!-- Desktop webp + png -->
+            <source srcset="img/sparta-logo-desktop.webp 1x,
+                            img/sparta-logo-desktop@2x.webp 2x"
+                    media="(min-width:1148px)"
+                    type="image/webp">
+            <source srcset="img/sparta-logo-desktop.png 1x,
+                            img/sparta-logo-desktop@2x.png 2x"
+                    media="(min-width:1148px)">
+            <!-- Tablet webp + png -->
             <source srcset="img/sparta-logo-tablet.webp 1x, 
                             img/sparta-logo-tablet@2x.webp 2x" 
                     media="(min-width:750px)"
@@ -25,6 +34,7 @@
             <source srcset="img/sparta-logo-tablet.png 1x, 
                             img/sparta-logo-tablet@2x.png 2x" 
                     media="(min-width:750px)">
+            <!-- Small webp -->
             <source srcset="img/sparta-logo.webp 1x,
                             img/sparta-logo@2x.webp 2x"
                     type="image/webp">
